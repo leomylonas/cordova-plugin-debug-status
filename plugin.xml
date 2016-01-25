@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-debug-status" version="0.0.1">
+	<name>Debug Status</name>
+	<description>Debug Status Plugin</description>
+	<js-module src="www/DebugStatus.js" name="DebugStatus">
+		<clobbers target="DebugStatus" />
+	</js-module>
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="DebugStatus">
+				<param name="ios-package" value="DebugStatus"/>
+			</feature>
+		</config-file>
+		<header-file src="src/ios/DebugStatus.h" />
+		<source-file src="src/ios/DebugStatus.m" />
+	</platform>
+	<platform name="android">
+	    <config-file target="res/xml/config.xml" parent="/*">
+	      <feature name="DebugStatus">
+	        <param name="android-package" value="co.mylonas.cordova.debugstatus.DebugStatus"/>
+	      </feature>
+	    </config-file>
+	    <source-file src="src/android/MDSaaSDebug.java" target-dir="src/co/mylonas/cordova/debugstatus"/>
+  </platform>
+</plugin>
