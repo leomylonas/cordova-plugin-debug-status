@@ -8,9 +8,9 @@
     NSString* callbackId = [command callbackId];
 
 	#ifdef DEBUG
-		NSString* status = @"release";
-	#else
 		NSString* status = @"debug";
+	#else
+		NSString* status = @"release";
 	#endif
 
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:status];
