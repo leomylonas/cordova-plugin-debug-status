@@ -7,7 +7,7 @@
 
     NSString* callbackId = [command callbackId];
 
-	#ifdef DEBUG
+	#if DEBUG
 		NSString* status = @"debug";
 	#else
 		NSString* status = @"release";
