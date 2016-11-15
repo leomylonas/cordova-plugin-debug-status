@@ -13,7 +13,7 @@
 		NSString* status = @"release";
 	#endif
 
-    CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:status];
+    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:status];
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
