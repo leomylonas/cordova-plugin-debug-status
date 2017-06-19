@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-debug-status",
+  "version": "0.0.2",
+  "description": "cordova-plugin-debug-status",
+  "cordova": {
+    "id": "cordova-plugin-debug-status",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leomylonas/cordova-plugin-debug-status.git"
+  },
+  "keywords": [
+    "cordova-plugin-debug-status"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Leo Mylonas",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/leomylonas/cordova-plugin-debug-status/issues"
+  },
+  "homepage": "https://github.com/leomylonas/cordova-plugin-debug-status"
+}
